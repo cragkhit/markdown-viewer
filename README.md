@@ -1,5 +1,7 @@
 # markdown-Viewer
 
+# Good Explanation
+
 In the final code snippet pair presented in the dataset, the model predicts that the two snippets are clones (not identical, but similar enough in structure and function to be considered clones). Here's a detailed breakdown of five lines from each code snippet that likely contribute the most to this prediction:
 
 ## Code Snippet 1 (from googlejam6.p075):
@@ -31,3 +33,19 @@ In the final code snippet pair presented in the dataset, the model predicts that
 5.Structured Problem Solving: The core structure of reading input, processing it in a loop, and outputting results with case labels is parallel in both snippets, indicating that they tackle similar types of problems even if the exact details of their implementations differ.
 
 The model likely identified these snippets as clones based on their structural and functional similarities, particularly in how they handle input/output operations, loop through test cases, and format their output, all of which are key aspects of solutions to competitive programming problems.
+
+# Bad Explanation
+
+Based on the predictions made by the GraphCodeBert model from Microsoft, here are the results:
+
+1. The model predicted the output of the first pair of Java code snippets as 0, indicating they are not clones of each other. The confidence score for this prediction is 0.9842093 for "not clone" and 0.01579067 for "clone".
+
+2. For the second pair of code snippets, the model predicted the output as 1, suggesting they are clones of each other. The confidence score for this prediction is overwhelmingly high, with 9.9999905e-01 for "clone" and 9.2051852e-07 for "not clone".
+
+3. The third pair of code snippets is predicted to have an output of 0, indicating they are not clones. The confidence score for this prediction is 9.999964e-01 for "not clone" and 3.600040e-06 for "clone".
+
+4. The fourth pair of code snippets is predicted to have an output of 1, suggesting they are clones. The confidence score for this prediction is 0.99510276 for "clone" and 0.00489721 for "not clone".
+
+5. Finally, the fifth pair of code snippets is predicted to have an output of 1, indicating they are clones of each other. The confidence score for this prediction is 9.999399e-01 for "clone" and 6.003184e-05 for "not clone".
+
+These predictions are based on the code structure and similarity identified by the GraphCodeBert model, trained on the BigcloneBench dataset.
